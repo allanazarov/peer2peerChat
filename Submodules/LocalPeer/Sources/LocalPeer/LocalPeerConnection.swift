@@ -13,8 +13,8 @@ public final class LocalPeerConnection {
     guard let connection = connection else { preconditionFailure() }
     precondition(connection.state == .setup)
     
-    connection.stateUpdateHandler = { [unowned self] (newState) in stateUpdate(with: newState) }
-    connection.viabilityUpdateHandler = { [unowned self] (isViable) in viabilityUpdate(with: isViable) }
+      connection.stateUpdateHandler = { [weak self] (newState) in self?.stateUpdate(with: newState) }
+      connection.viabilityUpdateHandler = { [weak self] (isViable) in self?.viabilityUpdate(with: isViable) }
     listen()
     connection.start(queue: queue)
   }
