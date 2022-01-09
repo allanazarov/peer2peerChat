@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Drops",
+        "repositoryURL": "https://github.com/omaralbeik/Drops.git",
+        "state": {
+          "branch": "main",
+          "revision": "41440b33372402770d8122fcf10994776d683e90",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
